@@ -1,0 +1,110 @@
+h1 {
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Waltograph';
+    text-align: center;
+    font-size: 70px;
+    color: darkmagenta;
+}
+
+body {
+    background-color: cornflowerblue;
+
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+  
+
+#alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+}
+
+#alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+    border: solid 1px;
+}
+
+#my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+}
+
+#my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+.active {
+    @include opacity;
+    cursor: :default;
+
+    &:hover {
+        @include fade;
+        @include opacity;
+    }
+}
+
+#mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+}
+
+button {
+    @include corners (5px);
+    background: lightgreen;
+    color: darkmagenta;
+    border: solid 4px yellow;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin top: 10%;
+    margin: 0 40%;
+    outline: none;
+    
+
+    &:hover{
+        @include transition;
+        background: yellow;
+        border: solid 4px white;
+        color: darkmagenta;
+    }
+}
+
+@media (max-width: 767px){
+    #alphabet {
+        padding: 0 0 0 15px;
+    }
+}
+
+@media (max-width: 480px){
+    #alphabet{
+        padding: 0 0 0 25px;
+
+    }
+
+}
