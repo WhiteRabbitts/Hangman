@@ -22,58 +22,59 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
 }
+
   
 
 #alphabet {
     margin: 15px auto;
     padding: 0;
     max-width: 900px;
+    color: darkmagenta;
+    background: lightgreen;
+
 }
 
 #alphabet li {
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 15px 0;
     list-style: none;
     width: 35px;
     height: 30px;
     padding-top: 10px;
+    padding-bottom: 10px;
     cursor: pointer;
     border: solid 1px;
+    color: darkmagenta;
+    background: lightgreen;
+    font-weight:  bold;
+    text-align: center;
+    font-size: 30px;
 }
 
 #my-word {
-    margin: 0;
+    
+    
     display: block;
-    padding: 0;
-    display: block;
+    float: left;
+    margin-right: 3%;
 }
 
 #my-word li {
-    position: relative;
     list-style: none;
     margin: 0;
     display: inline-block;
-    padding: 0 10px;
+    padding-right: 10px;
     font-size: 1.6em;
-}
-.active {
-    @include opacity;
-    cursor: :default;
-
-    &:hover {
-        @include fade;
-        @include opacity;
-    }
 }
 
 #mylives {
     font-size: 1.6em;
-    text-align: center;
-    display: block;
+    text-align: left;
+    border: 
+    
 }
 
 button {
-    @include corners (5px);
     background: lightgreen;
     color: darkmagenta;
     border: solid 4px yellow;
@@ -87,11 +88,6 @@ button {
     outline: none;
     
 
-    &:hover{
-        @include transition;
-        background: yellow;
-        border: solid 4px white;
-        color: darkmagenta;
     }
 }
 
