@@ -40,7 +40,7 @@ p {
     list-style: none;
     width: 35px;
     height: 30px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10px;
     cursor: pointer;
     border: solid 1px;
@@ -49,14 +49,22 @@ p {
     font-weight:  bold;
     text-align: center;
     font-size: 30px;
+    border-radius: 8px;
+
 }
+
+#alphabet :hover {
+    background-color: rgb(230, 18, 194);
+}
+
 
 #my-word {
     
-    
+    color: orange;
     display: block;
     float: left;
     margin-right: 3%;
+    font-family: sans-serif;
 }
 
 #my-word li {
@@ -71,25 +79,26 @@ p {
     font-size: 1.6em;
     text-align: left;
     border: 
-    
 }
 
-button {
-    background: lightgreen;
-    color: darkmagenta;
-    border: solid 4px yellow;
-    text-decoration: none;
+input {
+
+font-size: 30px;
+text-align: center;
+margin-left: 40%;
+height: 90%;
+}
+
+#button :hover {
+    background-color: mediumorchid;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 1.2em;
-    padding: 18px 10px;
-    width: 180px;
-    margin top: 10%;
-    margin: 0 40%;
-    outline: none;
+    font-family: 'Waltgraph';
     
+}   
 
-    }
 }
+
 
 @media (max-width: 767px){
     #alphabet {
