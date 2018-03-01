@@ -15,7 +15,7 @@ window.onload = function () {
     var space;              
   
     // Get elements
-    var showLives = document.getElementById("mylives");
+    var showlives = document.getElementById("mylives");
     
   
   
@@ -37,16 +37,7 @@ window.onload = function () {
     }
       
     
-    // Select Catagory
-    var selectCat = function () {
-      if (chosenCategory === categories[0]) {
-        catagoryName.innerHTML = "The Chosen Category Is Premier League Football Teams";
-      } else if (chosenCategory === categories[1]) {
-        catagoryName.innerHTML = "The Chosen Category Is Films";
-      } else if (chosenCategory === categories[2]) {
-        catagoryName.innerHTML = "The Chosen Category Is Cities";
-      }
-    }
+    
   
     // Create geusses ul
    var  result = function () {
@@ -72,16 +63,17 @@ window.onload = function () {
     
     // Show lives
    var  comments = function () {
-      showLives.innerHTML = "You have " + lives + " lives";
+      showlives.innerHTML = "You have " + lives + " lives";
       if (lives < 1) {
-        showLives.innerHTML = "Game Over";
+        showlives.innerHTML = "Not quite, try again!";
       }
+
       for (var i = 0; i < geusses.length; i++) {
         if (counter + space === geusses.length) {
-          showLives.innerHTML = "You Win!";
+          showlives.innerHTML = "Good golly Miss Molly, you won!";
         }
       }
-    }
+    };
   
 
 

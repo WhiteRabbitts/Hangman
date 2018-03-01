@@ -76,28 +76,27 @@ p {
 }
 
 #mylives {
-    font-size: 1.6em;
-    text-align: left;
-    border: 
+    font-size: 50
+    text-align: center;
 }
 
 input {
 
-font-size: 30px;
+font-size: 50px;
 text-align: center;
-margin-left: 40%;
+margin-left: 48%;
 height: 90%;
 }
 
 #button :hover {
-    background-color: mediumorchid;
-    border-radius: 30px;
+    background-color: rgb(204, 114, 226);
+    border-radius: 15px;
     cursor: pointer;
-    font-family: 'Waltgraph';
+
     
 }   
 
-}
+
 
 
 @media (max-width: 767px){
