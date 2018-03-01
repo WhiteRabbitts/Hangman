@@ -65,12 +65,12 @@ window.onload = function () {
    var  comments = function () {
       showlives.innerHTML = "You have " + lives + " lives";
       if (lives < 1) {
-        showlives.innerHTML = "Not quite, try again!";
+        showlives.innerHTML = "Son of a Nutcracker! - Buddy the Elf"
       }
 
       for (var i = 0; i < geusses.length; i++) {
         if (counter + space === geusses.length) {
-          showlives.innerHTML = "Good golly Miss Molly, you won!";
+          showlives.innerHTML = "Boy, do I hate being right all the time. - Dr. Ian Malcolm";
         }
       }
     };
